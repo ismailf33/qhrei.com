@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for only title font */
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+/* font asap */
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
