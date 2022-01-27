@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { FaTimes } from 'react-icons/fa';
 import { showErr } from '../../helpers/ErrHandler';
-import toast from 'react-hot-toast';
 import bg from '/public/banner.jpg';
 
 export default function Modal({ show, setShow }) {
@@ -20,6 +20,8 @@ export default function Modal({ show, setShow }) {
     }).then((res) => {
       if (res.status === 200) {
         toast.success('Email send suuccessfully')
+        reset()
+        setShow(!show)
       }
     })
   }

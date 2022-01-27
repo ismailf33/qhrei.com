@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { showErr } from '../../helpers/ErrHandler';
-import toast from 'react-hot-toast'
 import img from '/public/Can-I-Sell-my-Salem-Home-without-Any-Equity_-OG-2-400x250.jpg';
 
 export default function BlogDetails({ show, setShow }) {
@@ -23,6 +23,7 @@ export default function BlogDetails({ show, setShow }) {
     }).then((res) => {
       if (res.status === 200) {
         toast.success('Email send suuccessfully')
+        reset()
       }
     })
   }

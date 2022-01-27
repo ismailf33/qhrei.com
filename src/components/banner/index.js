@@ -1,8 +1,8 @@
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { TiTick } from 'react-icons/ti';
 import { showErr } from '../../helpers/ErrHandler';
 import banner from '/public/banner.jpg';
-import toast from 'react-hot-toast';
 
 const features = [
   {
@@ -40,6 +40,7 @@ export default function Banner() {
     }).then((res) => {
       if (res.status === 200) {
         toast.success('Email send suuccessfully')
+        reset();
       }
     })
   }

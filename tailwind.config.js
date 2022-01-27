@@ -52,6 +52,7 @@ module.exports = {
       'gray-light': '#888888',
       iron: '#d8d8d8',
       cross: 'rgba( 49, 91, 124, 1.00 )',
+      blue: '#031334'
     },
     fontFamily: {
       amiko: ['Amiko', 'sans-serif'],
