@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
-import toast from 'react-hot-toast';
 import { showErr } from '../../helpers/ErrHandler';
+import toast from 'react-hot-toast';
 
 export default function Offers() {
 
@@ -19,7 +19,6 @@ export default function Offers() {
     }).then((res) => {
       if (res.status === 200) {
         toast.success('Email send successfully')
-        reset()
       }
     })
   }

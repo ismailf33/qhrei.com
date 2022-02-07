@@ -35,7 +35,7 @@ export default function News({ show, setShow }) {
           />
         </div>
         <div className="text-center mt-14">
-          <Link href="/blogs">
+          <Link href="/blog">
             <a className="bg-aqua px-7 py-4 font-asap text-xl text-white uppercase font-medium rounded-full">
               Read More Blogs
             </a>
